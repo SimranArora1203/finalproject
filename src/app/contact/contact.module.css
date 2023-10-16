@@ -1,0 +1,62 @@
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+    gap:5rem;
+
+}
+.grid_card{
+    margin:0 auto;
+    padding: 2rem 4rem;
+        text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+   
+}
+.grid_card i {
+    font-size: 4.2rem;
+    color: #e50914;
+}
+
+.contact_section{
+    margin:5rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+.contact_section span{
+    color: #e50914;
+}
+.contact_form{
+    padding:3rem;
+    max-width: 48rem;
+        min-width: 32rem;
+    text-align:left;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.input_field{
+  margin-bottom:1rem;
+}
+.label{
+    display:flex;
+    flex-direction:column;
+}
+
+.input_field input,.input_field textarea{
+    /* border:2px solid black; */
+    /* border-radius:3px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.mapping{
+    width:100%;
+    /* height:350px; */
+}
+@media screen and (max-width:768px) {
+.grid {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 5rem;
+
+    }
+
+}

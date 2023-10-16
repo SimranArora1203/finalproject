@@ -1,0 +1,37 @@
+.main_section {
+    position: relative;
+    background: linear-gradient(-45deg, #a8e48a, #1eb6d9, #f2d3f7);
+    /* background-size: 400% 400%; */
+    /*animation: gradient-bg 20s ease infinite;*/
+}
+.hero_content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding:10px;
+}
+.hero_image img {
+    max-width: 100%;
+    height: auto;
+}
+/*waves effect */
+.custom-shape-divider-bottom-1681647578 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1681647578 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1681647578 .shape-fill {
+    fill: #FFFFFF;
+}

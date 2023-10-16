@@ -1,0 +1,111 @@
+.main_header{
+    padding:0 5rem;
+    height:6rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+box-shadow: rgb(39 29 29 / 13%) 35px 44px 53px 300px;
+  
+}
+.navbar_brand{
+    text-align:left;
+}
+.navbarList{
+    /* font-size:20px; */
+gap: 3.2rem;
+    display:flex;
+    list-style:none;
+}
+.navbarItem{
+  
+    font-weight:23px;
+}
+.navbarLink{
+   
+    text-decoration:none;
+    color:black;
+}
+.hero_image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mobile-navbar-btn{
+    display:none;
+}
+.mobile-nav-icon{
+    cursor:pointer;
+}
+.mobile-navbar-btn .close-outline {
+    display: none;
+}
+
+.mobile-navbar-btn[name="close-outline"] {
+    display: none;
+}
+@media screen and (max-width:999px){
+    .main-header{
+        padding:0 2rem;
+    }
+    .mobile-navbar-btn{
+        display:inline-block;
+    
+    }
+    .mobile-nav-icon{
+        font-size:3rem;
+        color:#161617;
+    }
+         .mobile-nav-icon:hover,
+         .close-outline:hover {
+             color: #e50914;
+         }
+    /* hiding the original nav */
+    .navbarList{
+        width:100vw;
+        height:100vh;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color:#fff;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        text-align:center;
+        /* transform: translateX(100%); */
+            visibility: hidden;
+            opacity: 0;
+
+    }
+   .navbarList .navbarItem{
+    font-size:3rem;
+
+   }
+         .navbarList .navbarItem a {
+             font-size: 3.2rem;
+         }
+    
+         .navbarList .navbarItem a:hover {
+             color: #e50914;
+         }
+         /* when user click on the open menu icon */
+         .active .mobile-nav-icon{
+            display: none;
+                font-size: 3rem;
+                position: absolute;
+                top: 3%;
+                right: 10%;
+                color: #161617;
+                z-index: 9999;
+         }
+            .active .close-outline {
+                      display: inline-block;
+                  }
+                .active .navbarList {
+                               visibility: visible;
+                               opacity: 1;
+                               /* transform: translateX(0); */
+                               z-index: 999;
+                           }
+}
